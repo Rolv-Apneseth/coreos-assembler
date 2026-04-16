@@ -131,6 +131,8 @@ func buildDiskFromOptions() *platform.Disk {
 	channel := "virtio"
 	if kola.QEMUOptions.Nvme {
 		channel = "nvme"
+	} else if kola.QEMUOptions.Iscsi {
+		channel = "iscsi"
 	}
 	sectorSize := 0
 	logicalSectorSize := 0

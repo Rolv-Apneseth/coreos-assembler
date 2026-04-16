@@ -151,6 +151,7 @@ func init() {
 	bv(&kola.QEMUOptions.Native4k, "qemu-native-4k", false, "Force 4k sectors for main disk")
 	bv(&kola.QEMUOptions.Disk512e, "qemu-512e", false, "Force 512e layout for main disk")
 	bv(&kola.QEMUOptions.Nvme, "qemu-nvme", false, "Use NVMe for main disk")
+	bv(&kola.QEMUOptions.Iscsi, "qemu-iscsi", false, "Use ISCSI for main disk")
 	bv(&kola.QEMUOptions.Swtpm, "qemu-swtpm", true, "Create temporary software TPM")
 	ssv(&kola.QEMUOptions.BindRO, "qemu-bind-ro", nil, "Mount $hostpath,$guestpath readonly; for example --qemu-bind-ro=/path/on/host,/var/mnt/guest)")
 
