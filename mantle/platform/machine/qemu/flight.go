@@ -43,6 +43,7 @@ type Options struct {
 	Native4k      bool
 	Disk512e      bool
 	Nvme          bool
+	Iscsi         bool
 
 	//Option to create a temporary software TPM - true by default
 	Swtpm bool

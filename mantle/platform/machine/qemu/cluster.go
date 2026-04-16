@@ -148,6 +148,8 @@ func (qc *Cluster) NewMachineWithOptions(userdata *conf.UserData, options platfo
 
 	if qc.flight.opts.Nvme || options.Nvme {
 		primaryDisk.Channel = "nvme"
+	} else if qc.flight.opts.Iscsi || options.Iscsi {
+		primaryDisk.Channel = "iscsi"
 	}
 	if qc.flight.opts.Native4k {
 		primaryDisk.SectorSize = 4096

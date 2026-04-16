@@ -175,6 +175,7 @@ type MachineOptions struct {
 	DisablePDeathSig          bool
 	OverrideBackingFile       string
 	Nvme                      bool
+	Iscsi                     bool
 	Cex                       bool
 	BindMountHostRO           []string
 }
